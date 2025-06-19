@@ -1,0 +1,623 @@
+.title {
+    text-align: center; 
+    font-size: 1.5rem; 
+    color: #20b2aa;
+    font-weight: bold; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f8f9fa; 
+        }
+
+        .banner {
+           width: 100%;
+           max-width: 100%;
+           height: auto;
+    }
+    .hero-banner {
+            background-color: #20b2aa; 
+            color: white;
+            padding: 20px;
+            border-radius: 0 0 50px 50px; 
+            position: relative;
+            overflow: hidden; 
+        }
+        .hero-banner h1 {
+            font-size: 2rem; 
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+            z-index: 2; 
+            position: relative;
+        }
+        .top-bar {
+            background-color: #20b2aa; /
+            color: white;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+        .top-bar .social-icons a {
+            color: white;
+            margin-left: 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        .top-bar .social-icons a:hover {
+            color: #e0e0e0;
+        }
+
+        .main-navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 10px 0;
+        }
+        .main-navbar .navbar-brand {
+            padding: 0;
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem; 
+            font-weight: 700;
+            color: #333;
+        }
+        .main-navbar .navbar-brand img {
+            height: 50px; 
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .main-navbar .navbar-nav .nav-link {
+            color: #555; 
+            font-weight: 500;
+            padding: 0.5rem 1.2rem;
+            transition: color 0.3s ease;
+            position: relative; /* Untuk garis bawah hover */
+        }
+        .main-navbar .navbar-nav .nav-link:hover {
+            color: #20b2aa; 
+        }
+        .main-navbar .navbar-nav .nav-link.active {
+             color: #20b2aa; 
+             font-weight: 700;
+        }
+
+        /* Dropdown specific styles */
+        .main-navbar .navbar-nav .nav-item.dropdown .nav-link {
+            display: flex;
+            align-items: center;
+        }
+        .main-navbar .navbar-nav .nav-item.dropdown .nav-link .bi {
+            margin-left: 5px;
+            font-size: 0.8em;
+        }
+        .main-navbar .dropdown-menu {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .main-navbar .dropdown-item {
+            color: #555;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .main-navbar .dropdown-item:hover {
+            background-color: #f0f2f5;
+            color: #20b2aa;
+        }
+
+        /* Login Button */
+        .btn-login {
+            background-color: #748ca5; 
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px; 
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-login:hover {
+            background-color: #20b2aa; /
+            color: white;
+        }
+
+        .form-check-input:checked {
+            background-color: #20b2aa; 
+            border-color: #20b2aa;
+        }
+        
+
+        .original-uiTM-elements {
+            display: none;
+        }
+
+        @media (max-width: 991.98px) {
+            .top-bar {
+                text-align: center;
+            }
+            .top-bar .social-icons {
+                margin-top: 5px;
+            }
+            .main-navbar .navbar-nav {
+                text-align: center; 
+                padding-top: 15px;
+            }
+            .main-navbar .navbar-toggler {
+                margin-left: auto; 
+            }
+            .main-navbar .btn-login {
+                width: 100%;
+                margin-top: 15px;
+            }
+            .main-navbar .navbar-brand {
+                margin-right: 0; 
+            }
+            
+       }
+        .bootcamp-section {
+            padding: 50px 0;
+        }
+        .bootcamp-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .course-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden; 
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-card .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 180px; 
+            object-fit: cover; 
+        }
+        .course-card .card-body {
+            padding: 20px;
+        }
+        .course-card .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #343a40;
+            min-height: 60px; 
+        }
+        .course-card .card-subtitle {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+            }
+        .card-link {
+            text-decoration: none; /* Hilangkan garis bawah default */
+            color: inherit; /* Warisi warna teks dari parent */
+            display: block; /* Agar link mengisi seluruh area kartu */
+            height: 100%; /* Agar link mengisi tinggi kartu */
+        }
+        .header-section {
+            background-color: #20b2aa;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header-section h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .breadcrumb-custom .breadcrumb-item a {
+            color: #d1c4e9; 
+            text-decoration: none;
+        }
+        .breadcrumb-custom .breadcrumb-item.active {
+            color: white;
+        }
+        .btn-primary {
+        background-color: #20b2aa; 
+        border-color: #20b2aa;     
+        }
+
+        .btn-primary:hover {
+          background-color: #1a928e; 
+            border-color: #1a928e; 
+        }
+        .login-card {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 450px; /* Batasi lebar maksimum card */
+            width: 100%; /* Agar responsif */
+        }
+        .login-card h2 {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .form-label {
+            font-weight: 500;
+            color: #555;
+        }
+        .btn-custom {
+            background-color: #007bff; /* Warna biru standar Bootstrap */
+            border-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            width: 100%; /* Butang mengisi lebar penuh */
+            margin-top: 20px;
+        }
+        /* Mengubah warna butang sesuai gambar (hijau toska) */
+        .btn-login {
+            background-color: #1a9e9a; /* Warna hijau toska */
+            border-color: #1a9e9a;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            width: 100%;
+            margin-top: 1px;
+        }
+        .btn-login:hover {
+            background-color: #158380; /* Warna lebih gelap saat hover */
+            border-color: #158380;
+        }
+        .form-control {
+            height: 45px; /* Tinggi input yang konsisten */
+        }
+        .form-check-input:checked {
+            background-color: #1a9e9a; /* Warna checkbox saat dicentang */
+            border-color: #1a9e9a;
+        }
+        .text-link {
+            color: #1a9e9a; /* Warna link sesuai gambar */
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .text-link:hover {
+            text-decoration: underline;
+        }
+        .password-toggle {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #ffffff;
+        }
+        .profile-main-container {
+            background-color: #ffffff; /* Latar belakang putih untuk kontainer utama */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            max-width: 900px; /* Batasi lebar kontainer */
+            margin: 50px auto; /* Tengah secara horizontal dengan margin atas/bawah */
+            display: flex; /* Menggunakan flexbox untuk layout kiri-kanan */
+            align-items: flex-start; /* Meratakan item ke atas */
+        }
+        .profile-left-col {
+            flex: 0 0 180px; /* Lebar tetap untuk kolom kiri */
+            text-align: center;
+            margin-right: 30px; /* Jarak antara kolom kiri dan kanan */
+        }
+       .profile-avatar-container {
+            width: 150px; /* Ukuran container avatar */
+            height: 150px;
+            border: 1px solid #dee2e6; /* Border tipis abu-abu */
+            border-radius: 8px; /* Sudut membulat */
+            margin: 0 auto 20px auto; /* Tengah dan jarak bawah */
+            display: flex; /* Untuk memusatkan gambar di dalamnya */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Penting agar gambar tidak keluar dari bingkai */
+            background-color: #f0f0f0; /* Latar belakang abu-abu muda */
+        }
+
+        .profile-avatar-image {
+            width: 100%; /* Membuat gambar mengisi lebar penuh container */
+            height: 100%; /* Membuat gambar mengisi tinggi penuh container */
+            object-fit: cover; /* Penting! Memastikan gambar memenuhi bingkai tanpa terdistorsi, memotong bagian yang berlebih */
+            border-radius: 8px; /* Pastikan gambar memiliki sudut membulat yang sama dengan containernya */
+
+}
+        .edit-profile-btn {
+            background-color: #20b2aa; /* Warna abu-abu tombol */
+            color: #ffffff; /* Warna teks tombol */
+            border: 1px solid #ced4da;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+        .edit-profile-btn:hover {
+            background-color: #dee2e6;
+            color: #343a40;
+        }
+
+        .profile-right-col {
+            flex-grow: 1; /* Mengambil sisa ruang yang tersedia */
+        }
+        .profile-detail-table {
+            width: 100%;
+            border-collapse: collapse; /* Menghapus spasi antar sel */
+        }
+        .profile-detail-table td {
+            padding: 8px 0; /* Padding vertikal */
+            font-size: 0.95rem;
+            color: #343a40;
+        }
+        .profile-detail-table td:first-child {
+            width: 150px; /* Lebar tetap untuk label */
+            color: #6c757d; /* Warna label sedikit lebih gelap */
+            font-weight: normal;
+        }
+        .profile-detail-table td:last-child {
+            font-weight: 500; /* Sedikit lebih tebal untuk nilai */
+        }
+        .profile-detail-table a {
+            color: #007bff; /* Warna biru untuk link (misal: email, classroom) */
+            text-decoration: none;
+        }
+        .profile-detail-table a:hover {
+            text-decoration: underline;
+            }
+            .profile-left-col {
+                margin-right: 0;
+                margin-bottom: 20px; /* Jarak bawah saat menumpuk */
+            }
+            .profile-detail-table td:first-child {
+                width: auto; /* Biarkan lebar otomatis di layar kecil */
+                text-align: left;
+            }
+            
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .pricing-header small {
+            display: block;
+            font-size: 0.85em;
+            color: #6c757d;
+            letter-spacing: 2px; /* Jarak antar huruf */
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .pricing-header h2 {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #343a40;
+        }
+
+        .pricing-item {
+            display: flex;
+            align-items: flex-start; /* Items start from top */
+            margin-bottom: 30px; /* Jarak antar item */
+        }
+        .pricing-item-content {
+            flex-grow: 1; /* Konten mengisi sisa ruang */
+        }
+        .pricing-item-content h5 {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 2px; /* Jarak antara judul dan deskripsi */
+        }
+        .pricing-item-content p {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 0; /* Hilangkan margin bawah default p */
+        }
+        .pricing-item-price {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #343a40;
+            white-space: nowrap; /* Pastikan harga tidak pecah baris */
+            margin-left: 20px; /* Jarak antara konten dan harga */
+        }
+        .profile-main-container {
+        display: flex;
+        flex-direction: column; /* Stack header and card vertically */
+        align-items: center; /* Center the card and header */
+        width: 100%; /* Take full width to allow centering */
+        max-width: 600px; /* Max width for the whole profile block */
+    }
+
+    /* Header text (Student e-Profile) */
+    .profile-page-header {
+        color: #333; /* Darker text color */
+        font-size: 2rem; /* Larger font size */
+        font-weight: normal; /* Not bold */
+        margin-bottom: 25px; /* Space below the header */
+        text-align: center;
+        width: 100%; /* Ensure it spans the max-width */
+    }
+
+    /* The main white card content */
+    .profile-card {
+        border-radius: 2px; /* Rounded corners for the card */
+        padding: 2px; /* Overall padding inside the card */
+        width: 100%; /* Card takes full width of its parent */
+        display: flex;
+        flex-direction: column; /* Stack items inside card vertically */
+        align-items: center; /* Center items horizontally inside the card */
+        gap: 20px; /* Space between major sections (avatar/button, table, bottom button) */
+    }
+
+   
+    /* Custom CSS to remove all borders from the table cells and control spacing */
+    .profile-detail-table {
+        width: 100%; /* Ensure table takes full available width */
+        border-collapse: collapse; /* Prevents double borders/gaps if any */
+        margin-top: 10px; /* Space above the table */
+    }
+
+    .profile-detail-table td {
+        border: none !important; /* Crucial to remove all borders */
+        padding-top: 5px;   /* Adjust vertical padding for row spacing */
+        padding-bottom: 5px; /* Adjust vertical padding for row spacing */
+        line-height: 1.5; /* Adjust line height for better readability */
+    }
+
+    /* Style for the labels (first column of table) */
+    .profile-detail-table td:first-child {
+        padding-right: 20px; /* Space between label and value */
+        min-width: 120px; /* Consistent width for alignment */
+        font-weight: normal; /* Not bold */
+        color: #555; /* Darker text color for labels */
+        text-align: left;
+    }
+
+    /* Style for the values (second column of table) */
+    .profile-detail-table td:last-child {
+        font-weight: normal; /* Not bold as per new image */
+        color: #333; /* Slightly darker than labels */
+        text-align: left;
+    }
+
+    /* Style for the 'Back' buttons */
+    .btn-custom-green {
+        background-color: #20b2aa; /* Light sea green */
+        border-color: #20b2aa; /* Ensure border matches background */
+        color: white;
+        padding: 10px 30px; /* Adjust padding for button size */
+        border-radius: 8px; /* Rounded corners for the button */
+        text-align: center;
+        text-decoration: none; /* Remove underline from link */
+        display: inline-block; /* Allows vertical centering with align-items */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-custom-green:hover {
+        background-color: #1a968d; /* Slightly darker shade on hover */
+        border-color: #1a968d;
+    }
+
+    .top-back-btn {
+        margin-top: 5px; 
+    }
+    .bottom-back-btn {
+        margin-top: 20px; /* Space between table and this button */
+        width: 100%; /* Make this button full width of the card's padded area */
+    }
+    .main-card {
+        background-color: white;
+        border-radius: 25px; /* More rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        width: 900px; /* Adjust width as needed */
+        max-width: 95%;
+    }
+    .left-panel {
+        background-color: #20b2aa; /* Yellow background */
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #333;
+        width: 50%; /* Adjusted for equal division */
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .left-panel .profile-circle {
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .left-panel .profile-circle img {
+        width: 80px; /* Adjust size of the icon */
+        height: 80px;
+        object-fit: contain;
+        border-radius: 50%; /* If it's a profile image */
+    }
+    .left-panel h3 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .left-panel p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .left-panel .arrow-button {
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .right-panel {
+        padding: 40px;
+        width: 50%; /* Adjusted for equal division */
+    }
+    .form-label {
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 5px;
+    }
+    .form-control, .form-select {
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+    .gender-options {
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Space between Male/Female */
+    }
+    .gender-option {
+        display: flex;
+        align-items: center;
+    }
+    /* Corrected selector: Removed space before [type="radio"] */
+    .gender-option input[type="radio"] {
+        margin-right: 8px;
+        width: 1.2rem; /* Adjust radio button size */
+        height: 1.2rem;
+        cursor: pointer;
+    }
+    
+    .button-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    .btn-cancel {
+        background-color: #e0e0e0;
+        color: #333;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .btn-save {
+        background-color: #20b2aa; /* Green color */
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 8px;
+        font-weight: 500;
+    }
