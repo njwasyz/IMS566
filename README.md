@@ -1,2 +1,2 @@
 # IMS566
-file:///C:/laragon/www/bootstrap/index.html
+(http://localhost/bootstrap/index.html)
